@@ -1,0 +1,6 @@
+<ul *ngIf="pages$ | async as pages">
+  <li *ngFor="let page of pages">
+    <h3>{{ page.title }}</h3>
+    <p>{{ page.content }}</p>
+  </li>
+</ul>
