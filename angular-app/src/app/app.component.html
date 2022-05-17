@@ -1,14 +1,1 @@
-<ul *ngIf="pagesDTO$ | async as strapiDTO">
-  <pre>
-  {{ strapiDTO | json }}
-  </pre>
-  <li *ngFor="let data of strapiDTO.data">
-    {{ data.attributes.title }}
-  </li>
-</ul>
-
-<ul *ngIf="pages$ | async as pages">
-  <li *ngFor="let page of pages">
-    {{ page.title }}
-  </li>
-</ul>
+<app-pages></app-pages>
